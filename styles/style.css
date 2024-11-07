@@ -1,3 +1,5 @@
+/*this line is a comment*/
+
 @keyframes appear {
     from {
         opacity: 0;
@@ -28,7 +30,7 @@ body {
     text-align: justify;
     background-color: rgba(150, 197, 236, 0.74);
 }
-main {
+div {
     animation: appear 0.7s ease-in-out;
     animation-timeline: view ();
     animation-range: 0% 50%;
