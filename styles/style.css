@@ -1,5 +1,7 @@
 /*this line is a comment*/
-
+:root {
+    text-decoration: none;
+}
 @keyframes appear {
     from {
         opacity: 0;
@@ -11,34 +13,52 @@
     }
 
 }
-
 header {
     width: 100%;
     height: 50px;
-    background-color: #6537b1;
+    background-color: #5305d1f1;
     display: flex;
-}
-nav > ul {
-    display: flex;
-    justify-content: space-evenly;
-    justify-content: center;
 }
 body {
     font-family: sans-serif;
     font-size: larger;
     align-content: center;
     text-align: justify;
-    background-color: rgba(150, 197, 236, 0.74);
+    background-color: rgba(130, 169, 221, 0.712);
+}
+a {
+    text-decoration: none;
+}
+a:link {
+    color: inherit;
+
+}
+nav {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
+    justify-content: right;
+    height: fit-content;
+}
+ul {
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+}
+.navitems {
+    display: flex;
+    justify-content: flex-end;
+}
+li {
+    list-style-type: none;
+    color: aliceblue;
+    min-width: auto;
+    height: auto;
 }
 div {
     animation: appear 0.7s ease-in-out;
     animation-timeline: view ();
     animation-range: 0% 50%;
-}
-nav li {
-    width: 50%;
-    max-width: 300px;
-    height: 50px;
 }
 .present {
     border: black 1px solid;
