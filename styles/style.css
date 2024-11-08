@@ -14,10 +14,7 @@
 
 }
 header {
-    width: 100%;
-    height: 50px;
-    background-color: #5305d1f1;
-    display: flex;
+    
 }
 body {
     font-family: sans-serif;
@@ -34,22 +31,21 @@ a:link {
 
 }
 nav {
-    overflow: hidden;
+    width: 100%;
+    height: 50px;
+    background-color: #5305d1f1;
     display: flex;
-    justify-content: space-evenly;
-    justify-content: right;
+    justify-content: flex-end;
     height: fit-content;
 }
 ul {
     overflow: hidden;
     display: flex;
     justify-content: flex-end;
-}
-.navitems {
-    display: flex;
-    justify-content: flex-end;
+    height: fit-content;
 }
 li {
+    padding: 1em;
     list-style-type: none;
     color: aliceblue;
     min-width: auto;
@@ -61,10 +57,15 @@ div {
     animation-range: 0% 50%;
 }
 .present {
+    border-radius: 15px;
     border: black 1px solid;
     margin: 80px auto;
     width: 250;
     max-width: 300px;
+}
+button {
+    height: fit-content;
+    width: fit-content;
 }
 .about, .the_way, .my_work {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
