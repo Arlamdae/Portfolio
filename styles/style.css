@@ -1,5 +1,6 @@
 /*this line is a comment*/
 :root {
+    scroll-behavior: smooth;
     text-decoration: none;
 }
 @keyframes scroll {
@@ -65,7 +66,7 @@ li {
     height: auto;
 }
 div {
-    animation: appear 0.7s ease-in-out;
+    animation: scroll 0.6s ease-in-out;
     animation-timeline: view ();
     animation-range: 0% 50%;
 }
@@ -92,4 +93,11 @@ button {
 .name {
     font-size: 24px;
     text-align: center;
+}
+.work {
+    display: flex;
+    border: solid black;
+}
+section {
+    margin-top: 50vh;
 }
