@@ -98,6 +98,16 @@ button {
     display: flex;
     border: solid black;
 }
-section {
-    margin-top: 50vh;
+.present {
+    margin-top: 40vh;
+}
+.about, .my_work {
+    margin-top: 100vh;
+}
+.inicio {
+    display: flex;
+    align-items: center;
+}
+.marcador {
+    visibility: hidden;
 }
