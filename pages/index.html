@@ -5,20 +5,20 @@
             <meta charset="UTF-8">
             <title>Portifólio</title>
             <link rel="stylesheet" href="../styles/style.css">
+            <scrip defer href="../script/app.js"></scrip>
         </head>
         <body>
-            <scrip href="../script/app.js" defer></scrip>
             <header>
                     <nav>
                         <ul>
-                            <li><a href="#marcador">Início</a></li>
-                            <li><a href="#about">Sobre mim</a></li>
-                            <li><a href="#my_work">Meus trabalhos</a></li>
+                            <li><a href="#marcador1" draggable="false">Início</a></li>
+                            <li><a href="#marcador2" draggable="false">Sobre mim</a></li>
+                            <li><a href="#marcador3" draggable="false">Projetos</a></li>
                         </ul> 
                     </nav>
             </header>
             <main>
-                <p class="marcador" id="marcador">1</p>
+                <p class="marcador" id="marcador1">1</p>
                 <section role="region" aria-describedby="present">
                     <div class="present">
                         <p class="text" id="present">Olá. Meu nome é 
@@ -35,10 +35,14 @@
                             <img src=".../components/envelope.png" id="email">
                         </a>
                     </div>
+                    <div>
+                        <img src="" alt="">
+                    </div>
                 </section>
-                <section role="region" aria-describedby="about">
+                <p class="marcador" id="marcador2">2</p>
+                <section class="MT" role="region" aria-describedby="about">
                     <div class="about">
-                        <h2 id="about">Sobre mim</h2>
+                        <h2>Sobre mim</h2>
                         <p>Meu nome é Nataniel Santos. Estou numa jornada para me tornar um Web developer, atualmente
                             possuo habilidades práticas em HTML, CSS e JavaScript já estudando os diversos frameworks da linguagem
                             além de outras linguagens para complementar esse ramo.
@@ -46,7 +50,7 @@
                         </p>
                     </div>
                     <div class="the_way">
-                        <h2 id="the_way">Minha trajetória até aqui</h2>
+                        <h2>Minha trajetória até aqui</h2>
                         <p>A programação apareceu a primeira vez na minha vida ainda no ensino médio 
                             quando um amigo me apresentou um pouco sobre HMTL e CSS.
                             Naquela época eu não tive muito interesse em seguir na área pois estava 
@@ -58,18 +62,17 @@
                             e agora procuro entrar no mercado de trabaho com as habilidades que possuo na área.
                         </p>
                     </div>
-                </section>    
+                </section>
+                <p class="marcador" id="marcador3">3</p>
                 <section role="region" aria-describedby="my_work">
+                    <h2>Projetos</h2>
                     <div class="my_work">
-                        <h2 id="my_work">Meus trabalhos</h2>
                         <div class="work">
                             <div class="teclado">
-
                             </div>
                         </div>
                         <div class="work">
                             <div class="calculadora">
-
                             </div>
                         </div>
                         <div class="work">
@@ -77,7 +80,7 @@
                             
                             </div>
                         
-                            
+
                         </div>
                     </div>
                 </section>

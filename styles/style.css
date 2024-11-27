@@ -2,11 +2,12 @@
 :root {
     scroll-behavior: smooth;
     text-decoration: none;
+    color: white;
 }
 @keyframes scroll {
     from {
         opacity: 0;
-        translate: -100vh 0;
+        translate: -100vw 0;
     }
     to {
         opacity: 1;
@@ -17,7 +18,7 @@
 @keyframes appear {
     from {
         opacity: 0;
-        translate: -100vh 0;
+        translate: -100vw 0;
     }
     to {
         opacity: 1;
@@ -33,20 +34,25 @@ body {
     font-size: larger;
     align-content: center;
     text-align: justify;
-    background-color: rgba(130, 169, 221, 0.712);
+    background-color: rgba(3, 3, 3, 0.945);
 }
 a {
-    text-decoration: none;
+    color: inherit;
+    text-decoration: none !important;
+}
+a:hover {
+    color: rgb(194, 2, 241);
 }
 a:link {
-    color: inherit;
-
+    text-decoration: none !important;
 }
 nav {
+    top: 0;
+    left: 0;
     Position: fixed;
     width: 100%;
-    height: 10px;
-    background-color: #5305d1;
+    height: 5px;
+    background-color: #06010a15;
     display: flex;
     justify-content: flex-end;
     height: fit-content;
@@ -55,7 +61,6 @@ ul {
     overflow: hidden;
     display: flex;
     justify-content: flex-end;
-    height: fit-content;
 }
 li {
     text-align: center;
@@ -63,16 +68,16 @@ li {
     list-style-type: none;
     color: aliceblue;
     min-width: auto;
-    height: auto;
+    height: 7px;
 }
 div {
     animation: scroll 0.6s ease-in-out;
     animation-timeline: view ();
-    animation-range: 0% 50%;
+    animation-range: cover 0% cover 50%;
 }
 .present {
     border-radius: 15px;
-    border: black 1px solid;
+    border: white 2px solid;
     margin: 80px auto;
     width: 250;
     max-width: 300px;
@@ -81,9 +86,9 @@ button {
     height: fit-content;
     width: fit-content;
 }
-.about, .the_way, .my_work {
+.about, .the_way {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin: 2em;
+    margin: 4em;
 }
 .name, .text {
     font-family: Arial, Helvetica, sans-serif;
@@ -94,15 +99,15 @@ button {
     font-size: 24px;
     text-align: center;
 }
-.work {
+.my_work {
     display: flex;
     border: solid black;
 }
 .present {
     margin-top: 40vh;
 }
-.about, .my_work {
-    margin-top: 100vh;
+.about {
+    margin-top: 30vh;
 }
 .inicio {
     display: flex;
@@ -110,4 +115,11 @@ button {
 }
 .marcador {
     visibility: hidden;
+}
+.marcador1 {
+    top: 0;
+    left: 0;
+}
+.MT {
+    margin-bottom: 150vh;
 }
